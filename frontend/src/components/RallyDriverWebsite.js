@@ -200,7 +200,7 @@ const RallyDriverWebsite = () => {
             initial={{ x: '100%' }}
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
-            className="fixed right-0 top-0 h-full w-80 bg-gray-800 z-40 border-l border-red-500/20 overflow-y-auto"
+            className="fixed right-0 top-0 h-full w-80 bg-gray-800 z-50 border-l border-red-500/20 overflow-y-auto"
           >
             <div className="p-6">
               <div className="flex items-center justify-between mb-6">
