@@ -378,9 +378,10 @@ const RallyDriverWebsite = () => {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">{product.name}</h3>
+                  <p className="text-gray-400 text-sm mb-3">{product.description}</p>
                   <p className="text-red-500 text-2xl font-bold mb-4">${product.price}</p>
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-400">Sizes: {product.sizes.join(', ')}</span>
+                    <span className="text-gray-400 text-sm">Sizes: {product.sizes.join(', ')}</span>
                     <button
                       onClick={() => addToCart(product)}
                       className="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-lg font-medium transition-colors"
