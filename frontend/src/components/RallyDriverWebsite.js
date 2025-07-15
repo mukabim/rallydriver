@@ -133,7 +133,7 @@ const RallyDriverWebsite = () => {
                   <button
                     key={item}
                     onClick={() => scrollToSection(item)}
-                    className={`px-3 py-2 text-sm font-medium transition-all duration-300 ${
+                    className={`px-3 py-2 text-sm font-medium transition-all duration-300 relative z-10 ${
                       currentSection === item
                         ? 'text-red-500 border-b-2 border-red-500'
                         : 'text-gray-300 hover:text-red-500'
@@ -147,7 +147,7 @@ const RallyDriverWebsite = () => {
             <div className="flex items-center space-x-4">
               <button
                 onClick={() => setShowCart(!showCart)}
-                className="relative p-2 rounded-full hover:bg-red-500/20 transition-colors"
+                className="relative p-2 rounded-full hover:bg-red-500/20 transition-colors z-10"
               >
                 <ShoppingCart className="h-6 w-6" />
                 {cartItems.length > 0 && (
@@ -159,7 +159,7 @@ const RallyDriverWebsite = () => {
               <div className="md:hidden">
                 <button
                   onClick={() => setIsMenuOpen(!isMenuOpen)}
-                  className="p-2 rounded-md hover:bg-red-500/20"
+                  className="p-2 rounded-md hover:bg-red-500/20 z-10"
                 >
                   {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
                 </button>
