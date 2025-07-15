@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ShoppingCart, Menu, X, Star, Trophy, Calendar, ExternalLink, MapPin, Phone, Mail, Instagram, Twitter, Facebook } from 'lucide-react';
+import './RallyDriverWebsite.css';
 
 const RallyDriverWebsite = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
