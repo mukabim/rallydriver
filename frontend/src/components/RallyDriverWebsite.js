@@ -9,55 +9,61 @@ const RallyDriverWebsite = () => {
   const [cartItems, setCartItems] = useState([]);
   const [showCart, setShowCart] = useState(false);
 
-  // Sample merchandise data
+  // Thunder #47 Official Merchandise
   const merchandise = [
     {
       id: 1,
-      name: "Thunder Racing T-Shirt",
+      name: "Thunder #47 Racing T-Shirt",
       price: 35,
-      image: "https://images.unsplash.com/photo-1710011003023-d708dd0f9ea4",
+      image: "https://images.unsplash.com/photo-1598976943052-4eb58ce9c7b3",
       category: "t-shirts",
-      sizes: ["S", "M", "L", "XL", "XXL"]
+      sizes: ["S", "M", "L", "XL", "XXL"],
+      description: "Official Thunder #47 branded t-shirt in premium cotton"
     },
     {
       id: 2,
-      name: "Rally Champion Hoodie",
+      name: "Thunder #47 Rally Hoodie",
       price: 65,
-      image: "https://images.unsplash.com/photo-1614200474605-f814e8705dab",
+      image: "https://images.unsplash.com/photo-1657212458073-d83c97ac65d1",
       category: "hoodies",
-      sizes: ["S", "M", "L", "XL", "XXL"]
+      sizes: ["S", "M", "L", "XL", "XXL"],
+      description: "Premium hoodie with Thunder #47 rally team branding"
     },
     {
       id: 3,
-      name: "Thunder 47 Racing Cap",
+      name: "Thunder #47 Racing Cap",
       price: 25,
-      image: "https://images.pexels.com/photos/19263380/pexels-photo-19263380.jpeg",
+      image: "https://images.unsplash.com/photo-1626275850959-2f19cd600b0f",
       category: "caps",
-      sizes: ["One Size"]
+      sizes: ["One Size"],
+      description: "Official Thunder #47 racing cap with team colors"
     },
     {
       id: 4,
       name: "Professional Rally Boots",
       price: 180,
-      image: "https://images.pexels.com/photos/6642997/pexels-photo-6642997.png",
+      image: "https://images.pexels.com/photos/5803147/pexels-photo-5803147.jpeg",
       category: "boots",
-      sizes: ["40", "41", "42", "43", "44", "45"]
+      sizes: ["40", "41", "42", "43", "44", "45"],
+      description: "Professional-grade rally boots worn by Thunder #47 team"
     },
     {
       id: 5,
-      name: "Thunder Racing Jacket",
+      name: "Thunder #47 Racing Jacket",
       price: 120,
-      image: "https://images.unsplash.com/photo-1721826799930-0e11b539b5bf",
+      image: "https://images.pexels.com/photos/29221427/pexels-photo-29221427.jpeg",
       category: "jackets",
-      sizes: ["S", "M", "L", "XL", "XXL"]
+      sizes: ["S", "M", "L", "XL", "XXL"],
+      description: "Official Thunder #47 racing jacket with team patches"
     },
     {
       id: 6,
-      name: "Rally Action Poster",
+      name: "Thunder #47 Rally Poster",
       price: 15,
-      image: "https://images.unsplash.com/photo-1721826801376-f405a23e9011",
+      image: "https://images.unsplash.com/photo-1685320628257-145820dedb27",
       category: "posters",
-      sizes: ["A3", "A2", "A1"]
+      sizes: ["A3", "A2", "A1"],
+      description: "Limited edition Thunder #47 rally poster collection"
     }
   ];
 
